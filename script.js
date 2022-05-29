@@ -1,29 +1,31 @@
-let numberOne = document.querySelector('#number1')
-let numberTwo = document.querySelector('#number2')
+/* 
+const numberOne = document.querySelector('#number1')
+const numberTwo = document.querySelector('#number2')
 
-let result = document.querySelector('#result')
+const result = document.querySelector('#result')
 
-let buttonSum = document.querySelector('#sum')
-let buttonSub = document.querySelector('#sub')
-let buttonMulti = document.querySelector('#multi')
-let buttonDiv = document.querySelector('#div')
+const buttonSum = document.querySelector('#sum')
+const buttonSub = document.querySelector('#sub')
+const buttonMulti = document.querySelector('#multi')
+const buttonDiv = document.querySelector('#div') 
+*/
 
-buttonSum.onclick = () => {
-    let newCalc = Number(numberOne.value) + Number(numberTwo.value)
+sum.onclick = () => {
+    let newCalc = Number(number1.value) + Number(number2.value)
     return result.textContent = `Resultado: ${newCalc}`
 }
 
-buttonSub.onclick = () => {
-    let newCalc = Number(numberOne.value) - Number(numberTwo.value)
+sub.onclick = () => {
+    let newCalc = Number(number1.value) - Number(number2.value)
     return result.textContent = `Resultado: ${newCalc}`
 }
 
-buttonMulti.onclick = () => {
-    let newCalc = Number(numberOne.value) * Number(numberTwo.value)
+multi.onclick = () => {
+    let newCalc = Number(number1.value) * Number(number2.value)
     return result.textContent = `Resultado: ${newCalc}`
 }
 
-buttonDiv.onclick = () => {
-    let newCalc = Number(numberOne.value) / Number(numberTwo.value)
+div.onclick = () => {
+    let newCalc = Number(number1.value) / Number(number2.value)
     return result.textContent = `Resultado: ${newCalc}`
 }
